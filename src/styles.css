@@ -1,3 +1,25 @@
-h1 {
-  color: red;
+:root {
+  --primary-background: #b295ff;
+  --secondary-background: #f4f4f4;
+  --white: #fff;
+  --bold-font: interBold;
+  --regular-font: interRegular;
+  --light-font: interLight;
+}
+
+@font-face {
+  font-family: interBold;
+  src: url(/Inter-Bold.otf);
+}
+@font-face {
+  font-family: interLight;
+  src: url(/Inter-Light.otf);
+}
+@font-face {
+  font-family: interRegular;
+  src: url(/Inter-Regular.otf);
+}
+
+body {
+  font-family: var(--regular-font);
 }
