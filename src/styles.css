@@ -59,10 +59,17 @@ body {
   text-align: center;
   color: var(--white);
 }
+.input-field-container input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 .input-field-container input::placeholder {
   text-align: center;
   color: var(--white);
   font-family: var(--light-font);
+}
+.input-field-container input:focus {
+  outline: none;
 }
 .input-field-container button {
   padding: 0.8em;
