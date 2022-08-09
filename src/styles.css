@@ -2,6 +2,7 @@
   --primary-background: #b295ff;
   --secondary-background: #f4f4f4;
   --white: #fff;
+  --black: #3d3d3d;
   --bold-font: interBold;
   --regular-font: interRegular;
   --light-font: interLight;
@@ -21,5 +22,59 @@
 }
 
 body {
+  margin: 0;
+  text-align: center;
+  color: var(--black);
+  background-color: var(--secondary-background);
+}
+
+.header {
+  font-family: var(--bold-font);
+  background-color: var(--primary-background);
+  margin: 0 auto;
+  padding: 3em;
+  color: var(--white);
+}
+.header h1 {
+  font-size: 4em;
+}
+.input-field-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 10em;
+  margin: 0 auto;
+}
+
+.input-field-container input,
+.input-field-container button {
+  border-radius: 3%;
+  border: solid 1px var(--white);
+}
+.input-field-container input {
+  padding: 0.2em;
+  background-color: var(--primary-background);
+  margin-bottom: 5%;
+  font-size: 4.5em;
+  text-align: center;
+  color: var(--white);
+}
+.input-field-container button {
+  padding: 0.8em;
+  text-align: center;
+  background-color: var(--white);
+  font-size: 1.2em;
+  font-family: var(--regular-font);
+}
+.unit-conversions {
+  font-family: var(--light-font);
+}
+.conversion-box {
+  margin: 3em auto;
+  width: 80%;
+  background-color: var(--white);
+  padding: 1em;
+}
+.conversion-heading {
   font-family: var(--regular-font);
 }

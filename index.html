@@ -8,25 +8,37 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <h1>Metric/Imperial Conversion</h1>
-      <input type="number" id="conversion-input" name="conversion-input" />
-      <button id="conversion-btn">Convert</button>
-    </header>
-    <main>
-      <div class="length-container">
-        <h2 class="conversion-heading">Length (Meter/Feet)</h2>
-        <div id="length"></div>
-      </div>
-      <div class="volume-container">
-        <h2 class="conversion-heading">Volume (Litres/Gallons)</h2>
-        <div id="volume"></div>
-      </div>
-      <div class="mass-container">
-        <h2 class="conversion-heading">Mass (Kilograms/Pounds)</h2>
-        <div id="mass"></div>
-      </div>
-    </main>
+    <div class="conversion-app">
+      <header>
+        <div class="header">
+          <h1>Metric/Imperial Conversion</h1>
+          <div class="input-field-container">
+            <input
+              type="number"
+              id="conversion-input"
+              name="conversion-input"
+            />
+            <button id="conversion-btn">Convert</button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="unit-conversions">
+          <div class="conversion-box">
+            <h2 class="conversion-heading">Length (Meter/Feet)</h2>
+            <div id="length"></div>
+          </div>
+          <div class="conversion-box">
+            <h2 class="conversion-heading">Volume (Litres/Gallons)</h2>
+            <div id="volume"></div>
+          </div>
+          <div class="conversion-box">
+            <h2 class="conversion-heading">Mass (Kilograms/Pounds)</h2>
+            <div id="mass"></div>
+          </div>
+        </div>
+      </main>
+    </div>
     <script src="/src/script.js"></script>
   </body>
 </html>
